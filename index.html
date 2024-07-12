@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div>
+        <section>
+            <img id="DisplayImg" src="./images/birb/2000x2000.webp"
+            srcset="
+            ./images/birb/2000x2000.webp 2000w,
+            ./images/birb/1000x1000.webp 1000w,
+            ./images/birb/500x500.webp 500w,
+            "
+            alt="None">
+        </section>
+        <section class="Switcher">
+            <img id="BirdImg" class="SwitcherImg" src="./images/birb/500x500.webp" alt="Bird walking on a Beach during the sunset." tabindex="0" title="Bird on the beach.">
+
+            <img id="TreeImg" class="SwitcherImg"  src="./images/tree/500x500.webp" alt="Tree." tabindex="0" title="Tree.">
+
+            <img id="DesertImg" class="SwitcherImg"  src="./images/desert/500x500.webp" alt="Desert at night. Coarse and rough." tabindex="0" title="Coarse and rough.">
+
+        </section>
+        <div id="announcer" role="status" aria-live="assertive" aria-atomic="true" hidden></div>
+    </div>
+</body>
+</html>
