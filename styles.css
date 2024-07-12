@@ -55,6 +55,45 @@ body{
     position: absolute;
 }
 
+.NextPrevious{
+    position:fixed;
+    z-index: -1;
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dot{
+    border:20px;
+    height: 125px;
+    width: 125px;
+    background-color: #222;
+    color:white;
+    border: solid white 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:66%;
+}
+
+.dot:hover{
+    border:20px;
+    height: 125px;
+    width: 125px;
+    background-color: #222;
+    color:white;
+    border: solid white 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:100%;
+}
+
 @media (max-width: 800px){
     .Switcher{
         display: flex;
@@ -63,5 +102,16 @@ body{
 
     .SwitcherImg{
         width:64px;
+    }
+
+    .NextPrevious{
+        position:fixed;
+        z-index: -1;
+        width: 99vw;
+        height: 95vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: end;
     }
 }

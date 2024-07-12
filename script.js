@@ -3,6 +3,8 @@ const birdBtn = document.getElementById("BirdImg");
 const treeBtn = document.getElementById("TreeImg");
 const desertBtn = document.getElementById("DesertImg");
 const announcer = document.getElementById("announcer");
+const previousBtn = document.getElementById("PreviousButton");
+const nextBtn = document.getElementById("NextButton");
 
 const images ={
     imageArray: [
@@ -85,6 +87,13 @@ treeBtn.addEventListener("mouseover",  function(){
 });
 desertBtn.addEventListener("mouseover",  function(){
     announcer.textContent = desertBtn.alt;
+});
+
+previousBtn.addEventListener("click",  function(){
+    images.goBack();
+});
+nextBtn.addEventListener("click",  function(){
+    images.goForward();
 });
 
 document.addEventListener("keydown", function(event){
